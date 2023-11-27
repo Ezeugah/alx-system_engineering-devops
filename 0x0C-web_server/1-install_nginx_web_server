@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Installs, configures, and starts the server
+# Ezeugah Jonathan
+sudo apt-get update
+sudo apt-get install -y nginx
+sudo chown -R ubuntu /var/www
+echo "Hello World" > /var/www/html/index.nginx-jaywon.html
+sudo service nginx start
